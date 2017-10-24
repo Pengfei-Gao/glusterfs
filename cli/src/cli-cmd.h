@@ -73,6 +73,8 @@ typedef struct cli_profile_info_ {
 
 typedef struct cli_cmd_volume_get_ctx_ cli_cmd_volume_get_ctx_t;
 
+int cli_cmd_ourscli_register (struct cli_state *state);
+
 int cli_cmd_volume_register (struct cli_state *state);
 
 int cli_cmd_probe_register (struct cli_state *state);

@@ -214,6 +214,10 @@ cli_cmds_register (struct cli_state *state)
         if (ret)
                 goto out;
 
+        ret = cli_cmd_ourscli_register(state);
+        if (ret)
+                goto out;
+        
         ret = cli_cmd_probe_register (state);
         if (ret)
                 goto out;
